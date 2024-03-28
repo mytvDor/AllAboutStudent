@@ -14,13 +14,13 @@ import StudentTable from "../src/component/StudentTable";
 import SgetStud from "../src/StudinfoComponents/SgetStud";
 import AcgetOne from "./components/AcgetOne";
 import AcgetAll from "./components/AcgetAll";
-import StudentDataComponent from "./redux/StudentDataComponent";
-import Dahboard from "./redux/Dahboard";
+import StudentDataComponent from "./main/StudentDataComponent";
+import Dahboard from "./main/Dahboard";
 
 import { NavLink, Route, Routes, BrowserRouter } from "react-router-dom";
-import DashBrdInfo from "./redux/DashBrdInfo";
+import DashBrdInfo from "./main/DashBrdInfo";
 import Navbar from "./Navbar";
-import Card from "./redux/Card";
+import Card from "./main/Card";
 import VNav from "./VNav";
 // import ReduxTest from "./redux/ReduxTest";
 function App() {

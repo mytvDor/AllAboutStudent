@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchAllStudentData } from "./student";
+import { fetchAllStudentData } from "../redux/student";
 import "./new.css";
 import Navbar from "../Navbar";
 import Card from "./Card";
