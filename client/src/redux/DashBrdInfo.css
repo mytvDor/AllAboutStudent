@@ -1,0 +1,19 @@
+.dashbrdComp {
+  margin: 2px solid red;
+  background: #262626;
+  padding: 50px;
+}
+.piAndBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.pie {
+  border: 2px solid white;
+  border-radius: 20px;
+  padding: 80px;
+  margin: 20px;
+}
