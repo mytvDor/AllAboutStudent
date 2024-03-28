@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-import "./UpdateForm.css"; // External CSS file for styles
+import "./UpdateForm.css";
 
 const UpdateForm = () => {
   const [prn, setPrn] = useState("");
@@ -51,7 +51,6 @@ const UpdateForm = () => {
       }
     } catch (error) {
       alert("Student not found!");
-      // alert(data);
 
       console.error("Error searching student:", error);
     }
@@ -77,15 +76,6 @@ const UpdateForm = () => {
       }));
     }
   };
-
-  // const handleCategoryChange = (e) => {
-  //   const { value } = e.target;
-  //   setFormData((prevData) => ({
-  //     ...prevData,
-  //     category: value,
-  //     scholarships: [], // Reset scholarships when category changes
-  //   }));
-  // };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -217,7 +207,7 @@ const UpdateForm = () => {
     setFormData((prevData) => ({
       ...prevData,
       category: value,
-      scholarships: [], // Reset scholarships when category changes
+      scholarships: [],
     }));
   };
 

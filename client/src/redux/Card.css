@@ -1,159 +1,4 @@
-/* .parent {
-  background-color: #f0f2f5;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
 
-.main {
-  background-color: #fff;
-  border-radius: 50px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin: 100px;
-  display: flex;
-  overflow: hidden;
-}
-
-.profile {
-  padding: 20px;
-  background-color: #f0f2f5;
-  border-radius: 20px 0 0 20px;
-}
-
-.profimg img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-}
-
-.subprofile {
-  padding: 20px;
-}
-
-.name {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  font-family: Arial, sans-serif; 
-}
-
-.yearbrnch {
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-}
-
-.year,
-.branch {
-  font-size: 14px;
-  color: #555;
-  font-family: Arial, sans-serif; 
-}
-
-.links {
-  margin-top: 20px;
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
-}
-
-.links a {
-  text-decoration: none;
-  color: #555;
-}
-
-.links img {
-  width: 30px;
-  height: 30px;
-  border-radius: 30%;
-  transition: transform 0.3s ease;
-}
-
-.links img:hover {
-  transform: scale(1.1);
-}
-
-.info,
-.acds {
-  flex: 1;
-  padding: 20px;
-}
-
-.info {
-  border-radius: 0 20px 20px 0;
-}
-
-.acds {
-  border-radius: 20px 0 0 20px;
-}
-
-.nums div,
-.pieces div,
-.fees div,
-.marks div {
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.prn,
-.rollnum,
-.dob,
-.gender,
-.category,
-.actual,
-.total,
-.paid,
-.remaining,
-.cgpa,
-.hsc,
-.ssc,
-.semwise,
-.backloks {
-  font-size: 14px;
-  font-family: Arial, sans-serif;
-}
-
-.addrs {
-  margin-top: 20px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.backloks {
-  margin-top: 20px;
-}
-
-
-.nums,
-.pieces,
-.fees,
-.marks {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.nums div,
-.pieces div,
-.fees div,
-.marks div {
-  margin-right: 20px;
-  margin-bottom: 10px;
-  color: #555;
-}
-
-.addrs {
-  margin-top: 20px;
-  color: #555;
-  line-height: 1.6;
-}
-
-.backloks {
-  margin-top: 20px;
-} */
-
-//#11009e, #4942e4 ,#e6b9de ,#fae7f3
 
 .sir {
   background-color: white;
@@ -166,20 +11,6 @@
   width
 }
 
-/* .parent {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;} */
-
-/* .main {
-  background-color: #fff;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  margin: 30px;
-  display: flex;
-  overflow: hidden;
-  max-width: 800px; /* Set maximum width */
 
 
 .main {
@@ -187,13 +18,11 @@
   border-radius: 20px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   margin: 50px;
-  /* display: flex; */
   display: flex;
 
   overflow: hidden;
-  /* height: 700px; */
-  /* width: 100vw; */
-  max-width: 800px; /* Set maximum width */
+ 
+  max-width: 800px; 
 }
 
 .profile {
@@ -235,7 +64,7 @@
 }
 
 .name {
-  font-size: 20px; /* Decrease font size */
+  font-size: 20px; 
   font-weight: bold;
   color: white;
   font-family: Arial, sans-serif;
@@ -265,7 +94,6 @@
 }
 
 .links {
-  /* margin-top: 0px; */
   padding: 20px;
   display: flex;
   gap: 20px;
@@ -330,9 +158,7 @@
   font-size: 14px;
   font-family: Arial, sans-serif;
   margin: 5px;
-  /* display: block;
-  flex-direction: coloumn;
-  justify-content: center; */
+
 
   text-align: center;
 }
@@ -347,7 +173,6 @@
   margin-top: 20px;
 }
 
-/* Add your existing CSS styles here */
 
 
 
@@ -360,19 +185,10 @@
   border-radius: 20px 0 0 20px;
 }
 
-/* .profimg img {
-  width: 150px; /*  #751affuce image size */
-/* height: 150px; /*  #751affuce image size */
-/* border-radius: 50%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
-/* } */
 
-/* .subprofile {
-  padding: 20px;
-} */
 
 .name {
-  font-size: 20px; /* Decrease font size */
+  font-size: 20px; 
   font-weight: bold;
   color: white;
   font-family: Arial, sans-serif;
@@ -459,8 +275,8 @@
 .phone,
 .addrs,
 .parent-phone {
-  font-size: 16px; /* Increase font size */
-  font-weight: 200; /* Increase font weight */
+  font-size: 16px; 
+  font-weight: 200; 
   font-family: Arial, sans-serif;
   border: 2px solid #751aff;
   border-radius: 10px;
@@ -501,7 +317,6 @@ h3 {
 
 .fill {
   height: 100%;
-  /* background-color: orange; Default color */
   color: #fff;
   text-align: center;
   line-height: 20px;
@@ -510,7 +325,6 @@ h3 {
 
 .dob{
   width:90px;
-  /* background:red */
+
 }
 
-//#11009e, #4942e4 ,#e6b9de ,#fae7f3

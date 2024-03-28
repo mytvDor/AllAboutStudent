@@ -6,14 +6,10 @@ const Card = ({ students }) => {
     <div
       className="parent"
       style={{
-        // backgroundColor: "white",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         flexWrap: "wrap",
-        // flexDirection: "column",
-        // margin: "20%",
-        // border: "2px solid red",
       }}
     >
       {students.map((student) => (
@@ -117,10 +113,8 @@ const Card = ({ students }) => {
                 </div>
                 <div className="paid">
                   {" "}
-                  <h3>SCOLERSHIP </h3> {/* <div className="progress-bar"> */}
+                  <h3>SCOLERSHIP </h3>
                   {student.scholarships}
-                  {/* </div> */}
-                  {/* </div> */}
                 </div>
               </div>
               <div className="total">
@@ -252,7 +246,6 @@ const Card = ({ students }) => {
                 >
                   {" "}
                   {student.backsubjects.length}
-                  {/* //#11009e, #4942e4 ,#e6b9de ,#fae7f3 */}
                 </div>
               </div>
             </div>
@@ -264,36 +257,3 @@ const Card = ({ students }) => {
 };
 
 export default Card;
-
-// <div key={student.prn} className="student-card">
-//                   {/* Render student information */}
-//                   <p>Name: {student.name}</p>
-//                   <p>PRN: {student.prn}</p>
-//                   <p>Address: {student.address}</p>
-//                   <p>Phone: {student.phone}</p>
-//                   <p>Parent Phone: {student.parentphone}</p>
-//                   <p>DOB: {student.DOB}</p>
-//                   <p>Gender: {student.gender}</p>
-//                   <p>Email: {student.email}</p>
-//                   <p>LinkedIn: {student.linkedin}</p>
-//                   <p>Adhar Number: {student.adharnum}</p>
-//                   <p>Resume Link: {student.resumelink}</p>{" "}
-//                   <img
-//                     src={`http://localhost:5000/${student.img}`}
-//                     alt="Student Image"
-//                   />
-//                   <p>Roll Number: {student.rollnum}</p>
-//                   <p>SSC: {student.ssc}</p>
-//                   <p>HSC: {student.Hsc}</p>
-//                   <p>Semester-wise: {student.semwise}</p>
-//                   <p>CGPA: {student.cgpa}</p>
-//                   <p>Back Subjects: {student.backsubjects}</p>
-//                   <p>Year: {student.year}</p>
-//                   <p>Branch: {student.branch}</p>
-//                   <p>Category: {student.category}</p>
-//                   <p>Scholarships: {student.scholarships}</p>
-//                   <p>Actual Fee: {student.actualfee}</p>
-//                   <p>Total Fee: {student.totalfee}</p>
-//                   <p>Remaining: {student.remaining}</p>
-//                   {/* Include other student details */}
-//                 </div>

@@ -27,7 +27,6 @@ const Scard = () => {
             <div key={index}>
               <p>PRN: {student.prn}</p>
               <p>Name: {student.name}</p>
-              {/* Display other student information similarly */}
             </div>
           ))}
         </div>

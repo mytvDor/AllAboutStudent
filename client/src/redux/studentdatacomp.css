@@ -7,7 +7,6 @@ body {
 }
 
 .search-containeri {
-  /* margin-top: -100px; */
   margin-bottom: 50px;
   display: flex;
   align-items: center;
@@ -19,36 +18,30 @@ body {
 .select2 {
   width: 200px;
   margin: 20px;
-  /* Remove default arrow */
-  border: 1px solid #ccc; /* Add border */
-  border-radius: 7px; /* Add rounded corners */
-  background-color: #262626; /* Add background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  font-size: 16px; /* Adjust font size */
-  color: white; /* Adjust font color */
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: #262626;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: white;
 }
 
 .styled-selecti:focus,
 .select2:focus {
-  outline: none; /* Remove default focus outline */
-  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+  border-color: #007bff;
 }
 .styled-selecti:focus {
-  outline: none; /* Remove default focus outline */
-  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+  border-color: #007bff;
 }
 
 .styled-selecti option,
 .option {
-  padding: 10px 10px 20px 10px; /* Adjust padding */
-  background-color: #262626; /* Add background color */
-  color: white; /* Adjust font color */
+  padding: 10px 10px 20px 10px;
+  background-color: #262626;
+  color: white;
 }
-
-/* .styled-selecti option:hover {
-  background-color: green; /* Change background color on hover */
-
-/* yaml */
 
 .ipcheck {
   width: 200px;
@@ -58,19 +51,3 @@ body {
   justify-content: space-around;
   color: white;
 }
-
-/* 
-input[type="text"],
-input[type="number"],
-input[type="date"] {
-  margin: 5px 5px 5px 5px;
-  border-radius: 7px;
-  height: 30px;
-  width: 270px;
-border: 1px solid #ccc; 
-  border-radius: 7px; /
-  background-color: #262626;  
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  font-size: 16px; 
-  color: white;
-} */

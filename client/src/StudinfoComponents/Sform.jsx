@@ -60,7 +60,6 @@ const Sform = () => {
       });
       if (response.ok) {
         console.log("Product added successfully");
-        // Reset form data if needed
       } else {
         console.error("Failed to add product");
         // console.log(error);
@@ -68,13 +67,6 @@ const Sform = () => {
     } catch (error) {
       console.error("Error is occured:", error);
     }
-    //db data
-    // setFormData((prevData) => ({
-    //   ...prevData,
-    //   [img]: filename,
-    // }));
-
-    // console.log(formData);
 
     try {
       formData.img = `${formData.prn}.${fileInput.files[0].name
@@ -86,19 +78,7 @@ const Sform = () => {
         headers: {
           "Content-Type": "application/json",
         },
-        //   prn: formData.prn,
-        //   name: formData.name,
-        //   address: formData.address,
-        //   phone: formData.phone,
-        //   parentphone: formData.parentphone,
-        //   DOB: formData.DOB.toString(),
-        //   gender: formData.gender,
-        //   email: formData.email,
-        //   linkedin: formData.linkedin.toString(),
-        //   adharnum: formData.adharnum,
-        //   resumelink: formData.resumelink,
-        //   img: formData.img,
-        // },
+
         body: JSON.stringify(formData),
       });
 
@@ -118,9 +98,7 @@ const Sform = () => {
           resumelink: "",
           img: "",
         });
-        // Reset file input
         setFileInput(null);
-        // Show alert
         alert("Form submitted successfully!");
       } else {
         console.log("error");
@@ -137,12 +115,6 @@ const Sform = () => {
 
       <div className="container">
         <h2 className="myheading">User Registration Form</h2>
-        {/* <form
-          id="userForm"
-          action="/upload"
-          method="POST"
-          onSubmit={handleSubmit}
-        > */}
 
         <form
           id="userForm"

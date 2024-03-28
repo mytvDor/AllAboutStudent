@@ -23,278 +23,7 @@ const Dahboard = () => {
   useEffect(() => {
     dispatch(fetchAllStudentData());
   }, [dispatch]);
-  // function calculateAge(dateOfBirth) {
-  //   const today = new Date();
-  //   const birthDate = new Date(dateOfBirth);
-  //   let age = today.getFullYear() - birthDate.getFullYear();
-  //   const monthDifference = today.getMonth() - birthDate.getMonth();
-  //   console.log(dateOfBirth);
 
-  //   if (
-  //     monthDifference < 0 ||
-  //     (monthDifference === 0 && today.getDate() < birthDate.getDate())
-  //   ) {
-  //     age--;
-  //   }
-  //   // console.log(age);
-  //   return age;
-  // }
-  // const handlethings = (e) => {
-  //   setSuperSearchField(e.target.value);
-  //   Object.values(students).filter((student) => {
-  //     if (searchField === "DOB") {
-  //       // Show all data entries if search term is empty
-  //       const age = calculateAge(student.DOB);
-
-  //       if (age >= searchTermOne && age <= searchTermTwo) {
-  //         switch (student.branch) {
-  //           case "CSE":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [CSE]: [...prevState[CSE], student],
-  //             }));
-  //             break;
-
-  //           case "Electrical":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Electrical]: [...prevState[Electrical], student],
-  //             }));
-  //             break;
-
-  //           case "Civil":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Civil]: [...prevState[Civil], student],
-  //             }));
-  //             break;
-
-  //           case "Data":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Data]: [...prevState[Data], student],
-  //             }));
-  //             break;
-  //         }
-
-  //         switch (student.year) {
-  //           case "fy":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [fy]: [...prevState[fy], student],
-  //             }));
-  //             break;
-
-  //           case "sy":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [sy]: [...prevState[sy], student],
-  //             }));
-  //             break;
-
-  //           case "ty":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [ty]: [...prevState[ty], student],
-  //             }));
-  //             break;
-
-  //           case "ly":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [ly]: [...prevState[ly], student],
-  //             }));
-  //             break;
-  //         }
-
-  //         const data = [...byAll, student];
-  //         setByAll(...byAll, data);
-  //       }
-  //       // return true;
-  //     }
-  //     if (searchField === "") {
-  //       // Show all data entries if search term is empty
-  //       // return true;
-  //     }
-  //     if (searchField === "backsubjects") {
-  //       const backsub = student.backsubjects.length;
-
-  //       if (backsub >= searchTermOne && backsub <= searchTermTwo) {
-  //         switch (student.branch) {
-  //           case "CSE":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [CSE]: [...prevState[CSE], student],
-  //             }));
-  //             break;
-
-  //           case "Electrical":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Electrical]: [...prevState[Electrical], student],
-  //             }));
-  //             break;
-
-  //           case "Civil":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Civil]: [...prevState[Civil], student],
-  //             }));
-  //             break;
-
-  //           case "Data":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Data]: [...prevState[Data], student],
-  //             }));
-  //             break;
-  //         }
-
-  //         switch (student.year) {
-  //           case "fy":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [fy]: [...prevState[fy], student],
-  //             }));
-  //             break;
-
-  //           case "sy":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [sy]: [...prevState[sy], student],
-  //             }));
-  //             break;
-
-  //           case "ty":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [ty]: [...prevState[ty], student],
-  //             }));
-  //             break;
-
-  //           case "ly":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [ly]: [...prevState[ly], student],
-  //             }));
-  //             break;
-  //         }
-
-  //         const data = [...byAll, student];
-  //         setByAll(...byAll, data);
-  //       }
-  //       // Show all data entries if search term is empty
-  //       // return true;
-  //     }
-  //     // const fieldValue = student[searchField];
-  //     // const fieldValue = student[searchField];
-
-  //     if (
-  //       searchField !== undefined &&
-  //       searchField !== null &&
-  //       searchField !== "backsubjects" &&
-  //       searchField !== "DOB"
-  //     ) {
-  //       // for (let i = 0; i <= student.length; i++) {
-  //       if (
-  //         student.searchField >= searchTermOne &&
-  //         student.searchField <= searchTermTwo
-  //       ) {
-  //         switch (student.branch) {
-  //           case "CSE":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [CSE]: [...prevState[CSE], student],
-  //             }));
-  //             break;
-
-  //           case "Electrical":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Electrical]: [...prevState[Electrical], student],
-  //             }));
-  //             break;
-
-  //           case "Civil":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Civil]: [...prevState[Civil], student],
-  //             }));
-  //             break;
-
-  //           case "Data":
-  //             setByBranch((prevState) => ({
-  //               ...prevState,
-  //               [Data]: [...prevState[Data], student],
-  //             }));
-  //             break;
-  //         }
-
-  //         switch (student.year) {
-  //           case "fy":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [fy]: [...prevState[fy], student],
-  //             }));
-  //             break;
-
-  //           case "sy":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [sy]: [...prevState[sy], student],
-  //             }));
-  //             break;
-
-  //           case "ty":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [ty]: [...prevState[ty], student],
-  //             }));
-  //             break;
-
-  //           case "ly":
-  //             setByYear((prevState) => ({
-  //               ...prevState,
-  //               [ly]: [...prevState[ly], student],
-  //             }));
-  //             break;
-  //         }
-
-  //         const data = [...byAll, student];
-  //         setByAll(...byAll, data);
-  //       }
-  //       // }
-  //       // return fieldValue;
-  //     }
-  //     // return false;
-
-  //     console.log(byAll);
-  //   });
-  // };
-
-  // Function to handle input type based on selected field
-  // function calculateAge(dateOfBirth) {
-  //   const today = new Date();
-  //   const birthDate = new Date(dateOfBirth);
-
-  //   const todayYear = today.getFullYear();
-  //   const birthYear = birthDate.getFullYear();
-
-  //   let age = todayYear - birthYear;
-  //   console.log(age);
-
-  //   const todayMonth = today.getMonth();
-  //   const birthMonth = birthDate.getMonth();
-
-  //   if (
-  //     todayMonth < birthMonth ||
-  //     (todayMonth === birthMonth && today.getDate() < birthDate.getDate())
-  //   ) {
-  //     age--;
-  //   }
-  //   console.log(typeof dateOfBirth);
-  //   return age;
-  // }
   function calculateAge(dateOfBirth) {
     var today = new Date();
     var parts = dateOfBirth.split("-"); // Split the date string by '-'
@@ -321,57 +50,41 @@ const Dahboard = () => {
     return age;
   }
 
-  // Example usage:
-  // Output the calculated age
-
   const handlethings = (e) => {
-    // const  = e.target.value; // Get the value of the super search field
     setSuperSearchField(e.target.value);
-    // Filter students based on the selected search field
     const filteredStudents = Object.values(students).filter((student) => {
       if (searchField === "DOB") {
-        // If the search field is "DOB", filter by age range
         const age = calculateAge(student.DOB);
         return age >= searchTermOne && age <= searchTermTwo;
       } else if (searchField === "backsubjects") {
-        // If the search field is "backsubjects", filter by the number of back subjects
         const backsub = student.backsubjects.length;
         return backsub >= searchTermOne && backsub <= searchTermTwo;
       } else if (searchField === "gender") {
-        // If the search field is "gender", convert input to lowercase and compare
         return (
           student[searchField].toLowerCase() === searchTermOne.toLowerCase()
         );
       } else if (searchField !== "") {
-        // If the search field is not empty or "backsubjects" or "DOB", filter by the specified field
         return (
           student[searchField] >= searchTermOne &&
           student[searchField] <= searchTermTwo
         );
       } else {
-        // If no search field is selected, return true to include all students
         return true;
       }
     });
     console.log(filteredStudents);
-    // Update byAll state with filtered students
     setByAll(filteredStudents);
 
-    // Initialize branch and year objects to store filtered students
     const branchObj = { CSE: [], Electrical: [], Civil: [], Data: [] };
     const yearObj = { fy: [], sy: [], ty: [], ly: [] };
 
-    // Loop through filtered students to categorize them by branch and year
     filteredStudents.forEach((student) => {
-      branchObj[student.branch].push(student); // Categorize by branch
-      yearObj[student.year].push(student); // Categorize by year
+      branchObj[student.branch].push(student);
+      yearObj[student.year].push(student);
     });
-
-    // Update byBranch and byYear states with categorized students
 
     setByBranch(branchObj);
     setByYear(yearObj);
-    // console.log(byBranch, byYear);
   };
 
   useEffect(() => {
@@ -449,7 +162,6 @@ const Dahboard = () => {
                       />
                       Female
                     </label>
-                    {/* Add more radio buttons for other gender options if needed */}
                   </div>
                 ) : (
                   <>

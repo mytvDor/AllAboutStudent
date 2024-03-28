@@ -3,14 +3,11 @@
   padding: 0px;
 }
 body {
-  /* background: #262626; */
 }
 
 .dashbrd {
-  /* margin-top: 100px; */
 }
 .search-container {
-  /* margin-top: 100px; */
   background: #262626;
   display: flex;
   align-items: center;
@@ -22,35 +19,34 @@ body {
 .select2 {
   width: 500px;
   margin: 20px;
-  /* Remove default arrow */
-  padding: 10px 20px; /* Adjust padding */
-  border: 1px solid #ccc; /* Add border */
-  border-radius: 7px; /* Add rounded corners */
-  background-color: #262626; /* Add background color */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow */
-  font-size: 16px; /* Adjust font size */
-  color: white; /* Adjust font color */
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  background-color: #262626;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: white;
 }
 
 .styled-select:focus,
 .select2:focus {
-  outline: none; /* Remove default focus outline */
-  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+  border-color: #007bff;
 }
 .styled-select:focus {
-  outline: none; /* Remove default focus outline */
-  border-color: #007bff; /* Change border color on focus */
+  outline: none;
+  border-color: #007bff;
 }
 
 .styled-select option,
 .option {
-  padding: 10px 10px 20px 10px; /* Adjust padding */
-  background-color: #262626; /* Add background color */
-  color: white; /* Adjust font color */
+  padding: 10px 10px 20px 10px;
+  background-color: #262626;
+  color: white;
 }
 
 .styled-select option:hover {
-  background-color: green; /* Change background color on hover */
+  background-color: green;
 }
 
 .ipcheck {

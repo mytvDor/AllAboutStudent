@@ -29,7 +29,6 @@ const AcgetAll = () => {
             <th>PRN</th>
             <th>Name</th>
             <th>Roll Number</th>
-            {/* Add more table headers for other student information */}
           </tr>
         </thead>
         <tbody>
@@ -38,7 +37,6 @@ const AcgetAll = () => {
               <td>{student.prn}</td>
               <td>{student.name}</td>
               <td>{student.rollnum}</td>
-              {/* Add more table cells for other student information */}
             </tr>
           ))}
         </tbody>

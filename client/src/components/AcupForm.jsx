@@ -2,9 +2,8 @@ import React, { useState } from "react";
 
 const AcupForm = () => {
   const [prn, setPrn] = useState("");
-  const [studentData, setStudentData] = useState(null); // State to store fetched student data
+  const [studentData, setStudentData] = useState(null);
   const [formData, setFormData] = useState({
-    // Initial form data
     prn: "",
     rollnum: "",
     name: "",
@@ -37,7 +36,7 @@ const AcupForm = () => {
       if (response.ok) {
         const data = await response.json();
         setStudentData(data);
-        setFormData(data); // Set form data with fetched student data
+        setFormData(data);
       } else {
         console.error("Failed to fetch student data");
       }
@@ -85,7 +84,7 @@ const AcupForm = () => {
             placeholder="PRN"
             value={formData.prn}
             onChange={handleChange}
-            disabled // PRN should not be editable
+            disabled
           />
           <input
             type="number"
@@ -119,7 +118,6 @@ const AcupForm = () => {
             onChange={handleChange}
             required
           />
-          {/* Assuming semwise and backsubjects are arrays */}
           <input
             type="text"
             name="semwise"
@@ -145,7 +143,6 @@ const AcupForm = () => {
             onChange={handleChange}
             required
           />
-          {/* Assuming backsubjects is an array */}
           <input
             type="text"
             name="backsubjects"
@@ -159,7 +156,6 @@ const AcupForm = () => {
             }
             required
           />
-          {/* Assuming idcard fields are strings */}
           <input
             type="text"
             name="idname"

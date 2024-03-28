@@ -1,5 +1,4 @@
 .vNav {
-  /* background: red; */
   flex-direction: column;
   width: 60px;
   margin-top: 20%;
@@ -20,6 +19,4 @@
   font-size: 10px;
   width: 100%;
   heigth: 100%;
-  /* border: 2px solid red; */
-  /* transform: rotate(90 deg); */
 }

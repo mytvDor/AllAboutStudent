@@ -1,7 +1,5 @@
-// Navbar.js
-
 import React from "react";
-import "./Navbar.css"; // Import the CSS file
+import "./Navbar.css";
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
@@ -10,7 +8,6 @@ const Navbar = () => {
       {" "}
       <nav>
         <div className="logo">STUDENT</div>
-        {/* <input type="text" /> */}
 
         <input type="checkbox" id="click" />
 

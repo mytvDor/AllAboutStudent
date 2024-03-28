@@ -10,8 +10,6 @@ const VNav = () => {
   return (
     <div>
       <nav className="vNav">
-        {/* <input type="text" /> */}
-
         <input type="checkbox" id="click" />
 
         <label htmlFor="click" className="check">

@@ -38,7 +38,6 @@ const FeeUpdate = () => {
         }
       );
       const data = await response.json();
-      // Update the state or perform any necessary actions after fee update
       alert(
         `you paid ${data.totalfee - data.remaining} \nremaining fee now ${
           data.remaining

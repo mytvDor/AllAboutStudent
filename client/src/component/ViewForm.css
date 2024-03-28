@@ -8,23 +8,23 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #f0f9eb; /* Trendy green background color */
+  background-color: #f0f9eb;
 }
 
 .viewe-form-container {
-  background-color: #f0f9eb; /* Trendy green background color */
+  background-color: #f0f9eb;
 }
 
 .card {
-  background-color: #ffffff; /* Trendy white background color */
+  background-color: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin: 20px;
   width: 300px;
   transition: box-shadow 0.3s ease-in-out;
-  font-family: "Roboto", sans-serif; /* Trendy font */
-  color: #333333; /* Text color */
+  font-family: "Roboto", sans-serif;
+  color: #333333;
 }
 
 .card:hover {
@@ -42,5 +42,5 @@
 }
 
 .card strong {
-  color: #f9ca24; /* Strong text color */
+  color: #f9ca24;
 }

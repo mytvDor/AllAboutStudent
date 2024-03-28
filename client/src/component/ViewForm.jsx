@@ -5,7 +5,6 @@ const ViewForm = () => {
   const [students, setStudents] = useState([]);
 
   useEffect(() => {
-    // Fetch data from the backend when the component mounts
     fetchData();
   }, []);
 
@@ -20,20 +19,16 @@ const ViewForm = () => {
   };
 
   const handleDownloadData = () => {
-    // Convert data to Excel format
     const worksheet = XLSX.utils.json_to_sheet(students);
     const workbook = XLSX.utils.book_new();
     XLSX.utils.book_append_sheet(workbook, worksheet, "Students");
-    // Save workbook to blob
     const wbout = XLSX.write(workbook, { bookType: "xlsx", type: "blob" });
-    // Create URL from blob
     const url = URL.createObjectURL(wbout);
-    // Create anchor element for downloading
     const a = document.createElement("a");
     a.href = url;
     a.download = "students.xlsx";
-    a.click(); // Trigger download
-    URL.revokeObjectURL(url); // Release blob
+    a.click();
+    URL.revokeObjectURL(url);
   };
 
   return (
@@ -70,7 +65,6 @@ const ViewForm = () => {
             <p>
               <strong>Remaining Fee:</strong> {student.remaining}
             </p>
-            {/* Render other fields here */}
           </div>
         ))}
       </div>

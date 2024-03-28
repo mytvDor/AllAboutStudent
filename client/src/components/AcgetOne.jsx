@@ -1,18 +1,16 @@
 import React, { useState, useEffect } from "react";
-// import StudentCard from "./StudentCard"; // Import the StudentCard component
 
 const AcgetData = () => {
   const [studentData, setStudentData] = useState(null);
-  const [prn, setPrn] = useState(""); // State to store PRN
+  const [prn, setPrn] = useState("");
 
   useEffect(() => {
-    // Function to fetch student data when component mounts or PRN changes
     const fetchStudentData = async () => {
       try {
         const response = await fetch(`http://localhost:5000/studentsAc/${prn}`);
         if (response.ok) {
           const data = await response.json();
-          setStudentData(data); // Set the fetched student data in state
+          setStudentData(data);
           console.log(data);
         } else {
           console.error("Failed to fetch student data");
@@ -23,12 +21,12 @@ const AcgetData = () => {
     };
 
     if (prn) {
-      fetchStudentData(); // Fetch student data when PRN is set
+      fetchStudentData();
     }
-  }, [prn]); // Run the effect when PRN changes
+  }, [prn]);
 
   const handlePrnChange = (e) => {
-    setPrn(e.target.value); // Update PRN state when input changes
+    setPrn(e.target.value);
   };
 
   return (

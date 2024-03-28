@@ -66,81 +66,15 @@ const SupdateStud = () => {
     }
   };
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (fileInput && fileInput.files[0]) {
-  //     // Delete old photo if exists
-  //     try {
-  //       // Send a DELETE request to the server to delete the old photo
-  //       const deleteResponse = await fetch(
-  //         `http://localhost:5000/deletePhoto/${prn}`,
-  //         {
-  //           method: "DELETE",
-  //           headers: {
-  //             "Content-Type": "application/json",
-  //           },
-  //         }
-  //       );
-  //       if (!deleteResponse.ok) {
-  //         console.log("Failed to delete old photo");
-  //       }
-  //     } catch (error) {
-  //       console.error("Error deleting old photo:", error);
-  //     }
-  //   }
-
-  //   // Now handle the uploading of the new photo
-  //   if (!fileInput || !fileInput.files[0]) {
-  //     console.log("No file selected");
-  //     return;
-  //   }
-  //   const imgData = new FormData();
-  //   imgData.append("img", fileInput.files[0]);
-  //   try {
-  //     const response = await fetch("http://localhost:5000/upload", {
-  //       method: "POST",
-  //       body: imgData,
-  //     });
-  //     if (response.ok) {
-  //       console.log("New photo uploaded successfully");
-  //       // Reset form data if needed
-  //     } else {
-  //       console.error("Failed to upload new photo");
-  //     }
-  //   } catch (error) {
-  //     console.error("Error uploading new photo:", error);
-  //   }
-  //   //db data
-  //   try {
-  //     const resp = await fetch(`http://localhost:5000/studinfo/${prn}`, {
-  //       method: "PATCH",
-  //       headers: {
-  //         content: "application/json",
-  //       },
-  //     });
-
-  //     if (!resp.ok) {
-  //       console.log("something went wrong at resp.ok");
-  //     } else {
-  //       const data = await resp.json();
-  //       console.log(data);
-  //     }
-  //   } catch (err) {
-  //     console.log(err);
-  //   }
-  // };
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    // Now handle the uploading of the new photo
     if (!fileInput || !fileInput.files[0]) {
       console.log("No file selected");
     } else {
       const imgData = new FormData();
       imgData.append("img", fileInput.files[0]);
-      imgData.append("prn", formData.prn); // Include PRN number in the FormData
-
+      imgData.append("prn", formData.prn);
       try {
         const response = await fetch("http://localhost:5000/upload", {
           method: "POST",
@@ -151,45 +85,6 @@ const SupdateStud = () => {
           return;
         }
       } catch (error) {
-        // Now handle the patch request to update student information
-        // const patchResponse = await fetch(
-        //   `http://localhost:5000/studinfo/${formData.prn}`,
-        //   {
-        //     method: "PATCH",
-        //     headers: {
-        //       "Content-Type": "application/json",
-        //     },
-        //     body: JSON.stringify(formData), // Send updated student information
-        //   }
-        // );
-
-        // if (!patchResponse.ok) {
-        //   console.error("Failed to update student information");
-        //   return;
-        // }
-
-        // console.log(
-        //   "New photo uploaded and student information updated successfully"
-        // );
-
-        // setFormData({
-        //   prn: "",
-        //   name: "",
-        //   address: "",
-        //   phone: "",
-        //   parentphone: "",
-        //   DOB: "",
-        //   gender: "",
-        //   email: "",
-        //   linkedin: "",
-        //   adharnum: "",
-        //   resumelink: "",
-        //   img: "",
-        // });
-        // // Reset file input
-        // setFileInput(null);
-        // // Show alert
-        // alert("Form submitted successfully!");
         console.error("Error:", error);
       }
     }
@@ -201,7 +96,7 @@ const SupdateStud = () => {
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify(formData), // Send updated student information
+          body: JSON.stringify(formData),
         }
       );
 
@@ -228,9 +123,7 @@ const SupdateStud = () => {
         resumelink: "",
         img: "",
       });
-      // Reset file input
       setFileInput(null);
-      // Show alert
       alert("Form submitted successfully!");
     } catch (err) {
       console.log(err);
@@ -247,12 +140,7 @@ const SupdateStud = () => {
       <div className="form">
         <div className="container">
           <h2>User Registration Form</h2>
-          {/* <form
-          id="userForm"
-          action="/upload"
-          method="POST"
-          onSubmit={handleSubmit}
-        > */}
+
           <form
             id="userForm"
             action="/upload"
@@ -394,7 +282,6 @@ const SupdateStud = () => {
               <label htmlFor="changeImage">Change Profile Image</label>
             </div>
 
-            {/* Image input */}
             {showImageInput && (
               <div className="form-group">
                 <label htmlFor="img">

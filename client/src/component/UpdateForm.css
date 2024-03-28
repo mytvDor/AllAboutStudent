@@ -1,6 +1,3 @@
-/* form.css */
-
-/* Base styles */
 .form-container {
   max-width: 600px;
   margin: 0 auto;
@@ -49,7 +46,6 @@ button[type="submit"]:hover {
   background-color: #45a049;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
   .form-container {
     padding: 10px;

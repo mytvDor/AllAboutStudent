@@ -17,7 +17,7 @@ const Form = () => {
     setFormData({
       ...formData,
       [name]: value,
-      scholarships: [], // Reset scholarships when category changes
+      scholarships: [],
     });
   };
 
@@ -55,19 +55,7 @@ const Form = () => {
   };
 
   const branchOptions = () => {
-    // const { year } = formData;
-    // switch (year) {
-    //   case "fy":
     return ["CSE", "Data", "Electrical", "Civil"];
-    //   case "sy":
-    //     return ["CSE", "Data", "Electrical", "Civil"];
-    //   case "ty":
-    //     return ["CSE", "Data", "Electrical", "Civil"];
-    //   case "ly":
-    //     return ["CSE", "Data", "Electrical", "Civil"];
-    //   default:
-    //     return [];
-    // }
   };
 
   const handleSubmit = async (e) => {
@@ -82,7 +70,6 @@ const Form = () => {
       });
       if (response.ok) {
         console.log("Form data submitted successfully!");
-        // Reset form fields after successful submission
         setFormData({
           prn: "",
           name: "",
