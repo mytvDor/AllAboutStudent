@@ -8,6 +8,8 @@ The Full Stack Student Management System is a web application designed for manag
   
   This project offers a complete solution for educational institutions to efficiently manage student information and analyze relevant data.
 
+NOTE : the project is uder devlopment still now
+
 
 ## Features
 
