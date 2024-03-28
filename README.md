@@ -1,4 +1,4 @@
-# AllAbout - Students 
+# AllAbout - Student 
 
 The Full Stack Student Management System is a web application designed for managing student data. here I use React.js and Redux for the frontend, while the backend is built using Node.js with Express.js and MongoDB as the database.
 
