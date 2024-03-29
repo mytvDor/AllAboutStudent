@@ -1,4 +1,4 @@
-# AllAbout - Student 
+# AllAbout - Students 
 
 The Full Stack Student Management System is a web application designed for managing student data. here I use React.js and Redux for the frontend, while the backend is built using Node.js with Express.js and MongoDB as the database.
 
@@ -8,8 +8,10 @@ The Full Stack Student Management System is a web application designed for manag
   
   This project offers a complete solution for educational institutions to efficiently manage student information and analyze relevant data.
 
-NOTE : the project is uder devlopment still now
 
+## Architecture
+
+![diagram-export-3-29-2024-10_10_34-PM](https://github.com/mytvDor/AllAboutStudent/assets/159150094/bf020316-3937-40a4-ab2b-fc756eb18194)
 
 ## Features
 
